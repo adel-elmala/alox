@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.15)
+
+project(alox)
+
+add_executable(alox "src/main.cpp" "src/alox.cpp" "src/scanner.cpp" "src/parser.cpp" "src/tokens.cpp" "include/interpeter.h" "src/interpeter.cpp")
+
+target_compile_features(alox PUBLIC cxx_std_98)
